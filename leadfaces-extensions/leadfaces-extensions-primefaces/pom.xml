@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  	<!-- Pom model version -->  
+  	<modelVersion>4.0.0</modelVersion>
+ 
+   	<!-- Project parent -->   
+  	<parent>
+	    <groupId>net.leadware</groupId>
+	    <artifactId>leadfaces-extensions</artifactId>
+	    <version>1.0.0-SNAPSHOT</version>
+  	</parent>
+ 
+   	<!-- Project artifact ID -->   
+  	<artifactId>leadfaces-extensions-primefaces</artifactId>
+
+  	<!-- Project name -->  
+  	<name>Leadfaces :: Primefaces Extension</name>
+ 
+   	<!-- Project description --> 	  
+	<description>Extension du framework pour la librairie de composants riches Primefaces</description>
+ 
+	<!-- Project dependencies -->
+	<dependencies>
+
+		<!-- jpersistence-tools api -->
+		<dependency>
+			<groupId>net.leadware</groupId>
+			<artifactId>leadfaces-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- Java EE API dependency -->		
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>${javaee-web-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	
+		<!-- Primefaces dependency -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>${primefaces.version}</version>
+			<scope>provided</scope>
+		</dependency>
+				
+	</dependencies>
+ 
+  
+</project>

@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  	<!-- Pom model version -->
+  	<modelVersion>4.0.0</modelVersion>
+  
+  	<!-- Project group ID -->
+  	<groupId>net.leadware</groupId>
+  
+  	<!-- Project artifact ID -->
+  	<artifactId>leadfaces</artifactId>
+  
+  	<!-- Project version -->
+  	<version>1.0.0-SNAPSHOT</version>
+  
+  	<!-- Project packaging -->
+  	<packaging>pom</packaging>
+  
+  	<!-- Project name --> 
+  	<name>Leadfaces</name>
+  
+  	<!-- Project description -->
+  	<description>Framework de mise en oeuvre d'applications web basées sur JSF</description>
+
+  	<!-- Project source URL -->
+  	<url>https://github.com/leadware/leadfaces/</url>
+  
+	<!-- Project licence -->
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<!-- Project scm -->
+	<scm>
+		<connection>scm:git:git@github.com:leadware/leadfaces.git</connection>
+		<developerConnection>scm:git:git@github.com:leadware/leadfaces.git</developerConnection>
+		<url>git@github.com:leadware/leadfaces.git</url>
+	</scm>
+	
+	<!-- Project issue managment -->
+	<issueManagement>
+		<system>Jira</system>
+		<url>http://jira.leadfaces.leadware.net</url>
+	</issueManagement>
+	
+	<!-- Project continuous integration system -->
+	<ciManagement>
+		<system>Bamboo</system>
+		<url>http://bamboo.leadfaces.leadware.net</url>
+	</ciManagement>  
+
+	<!-- Project organisation -->
+	<organization>
+		<name>Leadware</name>
+		<url>http://www.leadware.net</url>
+	</organization>
+	
+	<!-- Project developers -->
+	<developers>
+		<developer>
+			<name>Landry KAMHOUA</name>
+			<email>lkamhoua@leadware.net</email>
+			<organization>Leadware</organization>
+			<timezone>GMT+1</timezone>
+			<roles>
+				<role>Owner</role>
+				<role>Technical lead</role>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<!-- Project properties -->	
+	<properties> 
+
+		<!-- JEE Web API version -->
+		<javaee-web-api.version>6.0</javaee-web-api.version>
+
+		<!-- Primefaces version -->
+		<primefaces.version>5.2</primefaces.version>
+				
+	</properties>
+
+	<!-- Project modules -->		
+	<modules>
+	
+		<!-- Module central -->	
+		<module>leadfaces-core</module>
+		
+		<!-- Module des extensions -->			
+		<module>leadfaces-extensions</module>
+		
+	</modules>
+</project>
